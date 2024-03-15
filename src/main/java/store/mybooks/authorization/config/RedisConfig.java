@@ -3,7 +3,6 @@ package store.mybooks.authorization.config;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -52,7 +51,7 @@ public class RedisConfig {
 
     private final KeyConfig keyConfig;
 
-    // properties 에 저장한 host , post 연결 , 지금은 로컬
+    // properties 에 저장한 host , post 연결
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {
 

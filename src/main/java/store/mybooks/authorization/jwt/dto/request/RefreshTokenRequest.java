@@ -1,6 +1,5 @@
 package store.mybooks.authorization.jwt.dto.request;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -20,5 +19,9 @@ import lombok.NoArgsConstructor;
 public class RefreshTokenRequest {
 
     private String accessToken;
+
+    private String ip;
+
+    private String userAgent;
 
 }

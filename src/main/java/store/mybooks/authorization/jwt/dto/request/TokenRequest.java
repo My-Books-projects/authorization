@@ -1,6 +1,5 @@
 package store.mybooks.authorization.jwt.dto.request;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -27,5 +26,10 @@ public class TokenRequest {
     private String status;
 
     private String uuid;
+
+    private String ip;
+
+    private String userAgent;
+
 
 }
